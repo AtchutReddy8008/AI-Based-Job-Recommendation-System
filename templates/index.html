@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recommendation System</title>
+</head>
+<body>
+    <h1>AI-Based Job Recommendation System</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="resume">Paste Your Resume:</label><br>
+        <textarea id="resume" name="resume" rows="10" cols="50"></textarea><br><br>
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>
